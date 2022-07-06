@@ -4,22 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tab Title</title>
 
+    <title>Caught Speeding</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
 
     <script defer src="main.js"></script>
   </head>
+
   <body>
-    <main>
-      <h1>Title</h1>
-      <hr />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas libero
-        cum possimus, neque facere voluptatibus ullam provident, est iure
-        doloremque reiciendis. Similique deleniti laudantium reiciendis? Magnam
-        dolor consectetur facere repudiandae.
-      </p>
-    </main>
+    <h1>Caught Speeding</h1>
+    <hr />
+
+    <p>
+      <img
+        src="img/cop-police-speeding-radar-featured.jpg"
+        alt="Speed Trap"
+        width="400"
+      />
+    </p>
+
+    <p>Enter driver's speed and the speed limit to determine ticket type.</p>
+
+    <p>Driver's Speed: <input id="driver-speed" type="num" /></p>
+    <p>Speed Limit: <input id="speed-limit" type="num" /></p>
+    <p>
+      <button id="determine-btn">DETERMINE TICKET</button>
+    </p>
+
+    <p>
+      Ticket to issue:
+      <span id="output">----</span>.
+    </p>
   </body>
 </html>
